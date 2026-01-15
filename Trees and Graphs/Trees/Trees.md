@@ -1,5 +1,7 @@
 # Trees Data Structure
 
+📄 **Implementation Code:** [Trees.c](Trees.c)
+
 <div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
 
 ---
@@ -8,7 +10,7 @@
 
 A **tree** is a non-linear hierarchical data structure that consists of nodes connected by edges. It represents data in a **parent–child relationship**.
 
-![Binary Tree](https://www.geeksforgeeks.org/wp-content/uploads/binary-tree-to-DLL.png)
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/binary-tree-to-DLL.png" alt="Binary Tree" width="300">
 
 ---
 
@@ -61,7 +63,7 @@ A tree where a node can have **any number of children**.
 
 A tree where each node has **at most two children** (left and right).
 
-![Binary Tree](https://media.geeksforgeeks.org/wp-content/uploads/20221124174432/binary.png)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221124174432/binary.png" alt="Binary Tree" width="280">
 
 **Applications:**
 - Searching & Sorting algorithms
@@ -77,7 +79,7 @@ A tree where each node has **at most two children** (left and right).
 
 Each node has **either 0 or 2 children** (no node has only one child).
 
-![Full Binary Tree](https://media.geeksforgeeks.org/wp-content/uploads/20220630154752/FullBinaryTreewithsubscription.png)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220630154752/FullBinaryTreewithsubscription.png" alt="Full Binary Tree" width="250">
 
 ---
 
@@ -86,7 +88,7 @@ Each node has **either 0 or 2 children** (no node has only one child).
 - All levels are **completely filled** except possibly the last
 - Last level nodes are filled **from left to right**
 
-![Complete Binary Tree](https://media.geeksforgeeks.org/wp-content/uploads/20220630160142/CompleteBinaryTreewithsubscription.png)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220630160142/CompleteBinaryTreewithsubscription.png" alt="Complete Binary Tree" width="250">
 
 **Used in:** Heap implementation, Array representation of trees
 
@@ -97,7 +99,7 @@ Each node has **either 0 or 2 children** (no node has only one child).
 - All internal nodes have **exactly two children**
 - All leaf nodes are at the **same level**
 
-![Perfect Binary Tree](https://media.geeksforgeeks.org/wp-content/uploads/20220630155553/PerfectBinaryTreewithsubscription.png)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220630155553/PerfectBinaryTreewithsubscription.png" alt="Perfect Binary Tree" width="280">
 
 **Property:** If height = h, total nodes = $2^{h+1} - 1$
 
@@ -139,9 +141,11 @@ A binary tree where:
 - **Right subtree** contains values **greater than** root
 - Both subtrees are also BSTs
 
-![Binary Search Tree](https://media.geeksforgeeks.org/wp-content/uploads/20221128124149/bst.png)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221128124149/bst.png" alt="Binary Search Tree" width="280">
 
 **Operations:** Insertion, Searching, Deletion — all O(log n) when balanced
+
+📄 **Code:** [Trees.c](Trees.c)
 
 ---
 
@@ -149,7 +153,7 @@ A binary tree where:
 
 A **self-balancing BST** where balance factor of each node is −1, 0, or +1.
 
-![AVL Tree](https://media.geeksforgeeks.org/wp-content/uploads/20221229121830/avl.png)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221229121830/avl.png" alt="AVL Tree" width="300">
 
 **Balance Factor** = Height(Left Subtree) − Height(Right Subtree)
 
@@ -165,7 +169,7 @@ A self-balancing BST with **color properties**:
 - No two consecutive **red** nodes
 - Every path has same number of **black** nodes
 
-![Red-Black Tree](https://media.geeksforgeeks.org/wp-content/uploads/20200427100650/red-black-tree.png)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20200427100650/red-black-tree.png" alt="Red-Black Tree" width="350">
 
 ---
 
@@ -178,7 +182,7 @@ A **complete binary tree** satisfying heap property:
 | **Max Heap** | Parent ≥ Children |
 | **Min Heap** | Parent ≤ Children |
 
-![Max Heap](https://media.geeksforgeeks.org/wp-content/uploads/20201106115254/MaxHeap.jpg)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20201106115254/MaxHeap.jpg" alt="Max Heap" width="300">
 
 **Applications:** Priority queue, Heap sort
 
@@ -235,42 +239,48 @@ Traversal = visiting each node **exactly once**.
 
 ### Preorder Traversal (Root → Left → Right)
 
-![Preorder Traversal](https://media.geeksforgeeks.org/wp-content/uploads/20240429124538/Preorder-Traversal-of-Binary-Tree.webp)
+<img src="https://assets.digitalocean.com/articles/alligator/js/traversals/preorder.gif" alt="Preorder Traversal Animation" width="350">
 
 ```
-Visit order: A → B → D → E → C → F
+Visit order: Root → Left → Right
 ```
+
+📄 **Code:** [Trees.c](Trees.c) - `preorder()` function
 
 ---
 
 ### Inorder Traversal (Left → Root → Right)
 
-![Inorder Traversal](https://media.geeksforgeeks.org/wp-content/uploads/20240429124631/Inorder-Traversal-of-Binary-Tree.webp)
+<img src="https://assets.digitalocean.com/articles/alligator/js/traversals/inorder.gif" alt="Inorder Traversal Animation" width="350">
 
 ```
-Visit order: D → B → E → A → F → C
+Visit order: Left → Root → Right
 ```
 
 > 💡 **For BST:** Inorder traversal gives nodes in **sorted order**
+
+📄 **Code:** [Trees.c](Trees.c) - `inorder()` function
 
 ---
 
 ### Postorder Traversal (Left → Right → Root)
 
-![Postorder Traversal](https://media.geeksforgeeks.org/wp-content/uploads/20240429124831/Postorder-Traversal-of-Binary-Tree.webp)
+<img src="https://assets.digitalocean.com/articles/alligator/js/traversals/postorder.gif" alt="Postorder Traversal Animation" width="350">
 
 ```
-Visit order: D → E → B → F → C → A
+Visit order: Left → Right → Root
 ```
+
+📄 **Code:** [Trees.c](Trees.c) - `postorder()` function
 
 ---
 
 ### Level Order Traversal (BFS)
 
-![Level Order Traversal](https://media.geeksforgeeks.org/wp-content/uploads/20240429134701/Level-Order-Traversal-of-Binary-Tree.webp)
+<img src="https://miro.medium.com/v2/resize:fit:800/1*2NIfAdSadsdK2rP015f6Bg.gif" alt="Level Order Traversal Animation" width="350">
 
 ```
-Visit order: A → B → C → D → E → F (level by level)
+Visit order: Level by level (top to bottom, left to right)
 ```
 
 Uses a **Queue** for implementation.
@@ -279,20 +289,30 @@ Uses a **Queue** for implementation.
 
 ## Binary Search Tree Operations
 
+📄 **Full Implementation:** [Trees.c](Trees.c)
+
 ### Insertion
 
-![BST Insertion](https://media.geeksforgeeks.org/wp-content/uploads/20231004133515/Insert-a-node-in-BST.png)
+<img src="https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-insertion-animation.gif" alt="BST Insertion Animation" width="400">
+
+📄 **Code:** [Trees.c](Trees.c) - `insert()` function
 
 ### Searching
 
-![BST Searching](https://media.geeksforgeeks.org/wp-content/uploads/20231004132604/search-in-bst.png)
+<img src="https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-sorted-array-animation.gif" alt="BST Searching Animation" width="400">
+
+📄 **Code:** [Trees.c](Trees.c) - `search()` function
 
 ### Deletion
+
+<img src="https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-degenerating-demo-animation.gif" alt="BST Deletion Animation" width="400">
 
 Three cases:
 1. **Leaf node** → Simply remove
 2. **One child** → Replace with child
 3. **Two children** → Replace with inorder successor/predecessor
+
+📄 **Code:** [Trees.c](Trees.c) - `deleteNode()` function
 
 ---
 

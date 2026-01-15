@@ -10,13 +10,7 @@
 
 A **tree** is a non-linear hierarchical data structure that consists of nodes connected by edges. It represents data in a **parent–child relationship**.
 
-```
-            1 (Root)
-           / \
-          2   3
-         / \   \
-        4   5   6
-```
+![Binary Tree](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Binary_tree.svg/400px-Binary_tree.svg.png)
 
 ---
 
@@ -69,13 +63,7 @@ A tree where a node can have **any number of children**.
 
 A tree where each node has **at most two children** (left and right).
 
-```
-         10
-        /  \
-       5    15
-      / \   / \
-     3   7 12  20
-```
+![Binary Tree](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Binary_tree.svg/300px-Binary_tree.svg.png)
 
 **Applications:**
 - Searching & Sorting algorithms
@@ -91,15 +79,9 @@ A tree where each node has **at most two children** (left and right).
 
 Each node has **either 0 or 2 children** (no node has only one child).
 
-```
-         1
-        / \
-       2   3
-      / \
-     4   5
-```
+![Full Binary Tree](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Full_binary.svg/280px-Full_binary.svg.png)
 
-> ✅ Every node has 0 or 2 children
+---
 
 ---
 
@@ -108,15 +90,7 @@ Each node has **either 0 or 2 children** (no node has only one child).
 - All levels are **completely filled** except possibly the last
 - Last level nodes are filled **from left to right**
 
-```
-           1
-         /   \
-        2     3
-       / \   /
-      4   5 6
-```
-
-> ✅ Last level filled left to right
+![Complete Binary Tree](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Complete_binary2.svg/280px-Complete_binary2.svg.png)
 
 **Used in:** Heap implementation, Array representation of trees
 
@@ -127,15 +101,7 @@ Each node has **either 0 or 2 children** (no node has only one child).
 - All internal nodes have **exactly two children**
 - All leaf nodes are at the **same level**
 
-```
-           1
-         /   \
-        2     3
-       / \   / \
-      4   5 6   7
-```
-
-> ✅ All leaves at same level, all internal nodes have 2 children
+![Perfect Binary Tree](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Full_binary.svg/280px-Full_binary.svg.png)
 
 **Property:** If height = h, total nodes = $2^{h+1} - 1$
 
@@ -177,17 +143,7 @@ A binary tree where:
 - **Right subtree** contains values **greater than** root
 - Both subtrees are also BSTs
 
-```
-           8
-         /   \
-        3     10
-       / \      \
-      1   6      14
-         / \    /
-        4   7  13
-```
-
-> ✅ Left < Root < Right (always)
+![Binary Search Tree](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/300px-Binary_search_tree.svg.png)
 
 **Operations:** Insertion, Searching, Deletion — all O(log n) when balanced
 
@@ -199,13 +155,7 @@ A binary tree where:
 
 A **self-balancing BST** where balance factor of each node is −1, 0, or +1.
 
-```
-         30 (BF=0)
-        /  \
-   (0) 20   40 (0)
-      /  \
-     10  25
-```
+![AVL Tree](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/AVL-tree-wBalance_K.svg/350px-AVL-tree-wBalance_K.svg.png)
 
 **Balance Factor** = Height(Left Subtree) − Height(Right Subtree)
 
@@ -221,17 +171,7 @@ A self-balancing BST with **color properties**:
 - No two consecutive **red** nodes
 - Every path has same number of **black** nodes
 
-```
-           13(B)
-          /    \
-       8(R)    17(R)
-       /  \      \
-     1(B) 11(B)  25(B)
-       \        /
-       6(R)   22(R)
-```
-
-> B = Black, R = Red
+![Red-Black Tree](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Red-black_tree_example.svg/400px-Red-black_tree_example.svg.png)
 
 ---
 
@@ -244,14 +184,7 @@ A **complete binary tree** satisfying heap property:
 | **Max Heap** | Parent ≥ Children |
 | **Min Heap** | Parent ≤ Children |
 
-```
-    Max Heap:          Min Heap:
-        90                 10
-       /  \               /  \
-      80   70            20   30
-     / \                / \
-    50  60             40  50
-```
+![Max Heap](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Max-Heap.svg/320px-Max-Heap.svg.png)
 
 **Applications:** Priority queue, Heap sort
 
@@ -308,21 +241,9 @@ Traversal = visiting each node **exactly once**.
 
 ### Preorder Traversal (Root → Left → Right)
 
-```
-         1  ← Visit first
-        / \
-       2   3
-      / \
-     4   5
-
-Order: 1 → 2 → 4 → 5 → 3
-```
+![Preorder Traversal](https://upload.wikimedia.org/wikipedia/commons/a/ac/Preorder-traversal.gif)
 
 **Steps:** Visit root, traverse left subtree, traverse right subtree
-
-```
-Visit order: Root → Left → Right
-```
 
 📄 **Code:** [Trees.c](Trees.c) - `preorder()` function
 
@@ -330,19 +251,9 @@ Visit order: Root → Left → Right
 
 ### Inorder Traversal (Left → Root → Right)
 
-```
-         2
-        / \
-       1   3  ← For BST: gives sorted order!
-      
-Order: 1 → 2 → 3
-```
+![Inorder Traversal](https://upload.wikimedia.org/wikipedia/commons/4/48/Inorder-traversal.gif)
 
 **Steps:** Traverse left subtree, visit root, traverse right subtree
-
-```
-Visit order: Left → Root → Right
-```
 
 > 💡 **For BST:** Inorder traversal gives nodes in **sorted order**
 
@@ -352,19 +263,9 @@ Visit order: Left → Root → Right
 
 ### Postorder Traversal (Left → Right → Root)
 
-```
-         3  ← Visit last
-        / \
-       1   2
-      
-Order: 1 → 2 → 3
-```
+![Postorder Traversal](https://upload.wikimedia.org/wikipedia/commons/2/28/Postorder-traversal.gif)
 
 **Steps:** Traverse left subtree, traverse right subtree, visit root
-
-```
-Visit order: Left → Right → Root
-```
 
 📄 **Code:** [Trees.c](Trees.c) - `postorder()` function
 
@@ -372,21 +273,9 @@ Visit order: Left → Right → Root
 
 ### Level Order Traversal (BFS)
 
-```
-Level 0:        1
-              /   \
-Level 1:     2     3
-            / \   / \
-Level 2:   4   5 6   7
+![Level Order Traversal](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Sorted_binary_tree_breadth-first_traversal.svg/350px-Sorted_binary_tree_breadth-first_traversal.svg.png)
 
-Order: 1 → 2 → 3 → 4 → 5 → 6 → 7
-```
-
-**Steps:** Visit nodes level by level, left to right
-
-```
-Visit order: Level by level (top to bottom, left to right)
-```
+**Steps:** Visit nodes level by level, left to right. Uses a **Queue**.
 
 Uses a **Queue** for implementation.
 

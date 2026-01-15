@@ -21,7 +21,7 @@ void insertAtBeginning(int data){
         return;
     }
     Node * temp = head;
-    while(temp->next!=NULL){
+    while(temp->next!=head){
         temp = temp->next;
     }
     temp->next = newNode;

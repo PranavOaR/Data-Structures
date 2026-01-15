@@ -10,7 +10,13 @@
 
 A **tree** is a non-linear hierarchical data structure that consists of nodes connected by edges. It represents data in a **parent–child relationship**.
 
-<img src="https://i.imgur.com/vGbLMxS.png" alt="Binary Tree" width="300">
+```
+            1 (Root)
+           / \
+          2   3
+         / \   \
+        4   5   6
+```
 
 ---
 
@@ -63,7 +69,13 @@ A tree where a node can have **any number of children**.
 
 A tree where each node has **at most two children** (left and right).
 
-<img src="https://i.imgur.com/vGbLMxS.png" alt="Binary Tree" width="280">
+```
+         10
+        /  \
+       5    15
+      / \   / \
+     3   7 12  20
+```
 
 **Applications:**
 - Searching & Sorting algorithms
@@ -79,7 +91,15 @@ A tree where each node has **at most two children** (left and right).
 
 Each node has **either 0 or 2 children** (no node has only one child).
 
-<img src="https://i.imgur.com/QKVnXhP.png" alt="Full Binary Tree" width="250">
+```
+         1
+        / \
+       2   3
+      / \
+     4   5
+```
+
+> ✅ Every node has 0 or 2 children
 
 ---
 
@@ -88,7 +108,15 @@ Each node has **either 0 or 2 children** (no node has only one child).
 - All levels are **completely filled** except possibly the last
 - Last level nodes are filled **from left to right**
 
-<img src="https://i.imgur.com/KQsS5Rz.png" alt="Complete Binary Tree" width="250">
+```
+           1
+         /   \
+        2     3
+       / \   /
+      4   5 6
+```
+
+> ✅ Last level filled left to right
 
 **Used in:** Heap implementation, Array representation of trees
 
@@ -99,7 +127,15 @@ Each node has **either 0 or 2 children** (no node has only one child).
 - All internal nodes have **exactly two children**
 - All leaf nodes are at the **same level**
 
-<img src="https://i.imgur.com/1NRwVjY.png" alt="Perfect Binary Tree" width="280">
+```
+           1
+         /   \
+        2     3
+       / \   / \
+      4   5 6   7
+```
+
+> ✅ All leaves at same level, all internal nodes have 2 children
 
 **Property:** If height = h, total nodes = $2^{h+1} - 1$
 
@@ -141,7 +177,17 @@ A binary tree where:
 - **Right subtree** contains values **greater than** root
 - Both subtrees are also BSTs
 
-<img src="https://i.imgur.com/jMIlLYC.png" alt="Binary Search Tree" width="280">
+```
+           8
+         /   \
+        3     10
+       / \      \
+      1   6      14
+         / \    /
+        4   7  13
+```
+
+> ✅ Left < Root < Right (always)
 
 **Operations:** Insertion, Searching, Deletion — all O(log n) when balanced
 
@@ -153,7 +199,13 @@ A binary tree where:
 
 A **self-balancing BST** where balance factor of each node is −1, 0, or +1.
 
-<img src="https://i.imgur.com/OyVkzKB.png" alt="AVL Tree" width="300">
+```
+         30 (BF=0)
+        /  \
+   (0) 20   40 (0)
+      /  \
+     10  25
+```
 
 **Balance Factor** = Height(Left Subtree) − Height(Right Subtree)
 
@@ -169,7 +221,17 @@ A self-balancing BST with **color properties**:
 - No two consecutive **red** nodes
 - Every path has same number of **black** nodes
 
-<img src="https://i.imgur.com/JDq3cNr.png" alt="Red-Black Tree" width="350">
+```
+           13(B)
+          /    \
+       8(R)    17(R)
+       /  \      \
+     1(B) 11(B)  25(B)
+       \        /
+       6(R)   22(R)
+```
+
+> B = Black, R = Red
 
 ---
 
@@ -182,7 +244,14 @@ A **complete binary tree** satisfying heap property:
 | **Max Heap** | Parent ≥ Children |
 | **Min Heap** | Parent ≤ Children |
 
-<img src="https://i.imgur.com/RH5tTxK.png" alt="Max Heap" width="300">
+```
+    Max Heap:          Min Heap:
+        90                 10
+       /  \               /  \
+      80   70            20   30
+     / \                / \
+    50  60             40  50
+```
 
 **Applications:** Priority queue, Heap sort
 
@@ -239,7 +308,17 @@ Traversal = visiting each node **exactly once**.
 
 ### Preorder Traversal (Root → Left → Right)
 
-<img src="https://i.imgur.com/fzJHlvF.gif" alt="Preorder Traversal Animation" width="350">
+```
+         1  ← Visit first
+        / \
+       2   3
+      / \
+     4   5
+
+Order: 1 → 2 → 4 → 5 → 3
+```
+
+**Steps:** Visit root, traverse left subtree, traverse right subtree
 
 ```
 Visit order: Root → Left → Right
@@ -251,7 +330,15 @@ Visit order: Root → Left → Right
 
 ### Inorder Traversal (Left → Root → Right)
 
-<img src="https://i.imgur.com/bRk0b8h.gif" alt="Inorder Traversal Animation" width="350">
+```
+         2
+        / \
+       1   3  ← For BST: gives sorted order!
+      
+Order: 1 → 2 → 3
+```
+
+**Steps:** Traverse left subtree, visit root, traverse right subtree
 
 ```
 Visit order: Left → Root → Right
@@ -265,7 +352,15 @@ Visit order: Left → Root → Right
 
 ### Postorder Traversal (Left → Right → Root)
 
-<img src="https://i.imgur.com/MpKxpfT.gif" alt="Postorder Traversal Animation" width="350">
+```
+         3  ← Visit last
+        / \
+       1   2
+      
+Order: 1 → 2 → 3
+```
+
+**Steps:** Traverse left subtree, traverse right subtree, visit root
 
 ```
 Visit order: Left → Right → Root
@@ -277,7 +372,17 @@ Visit order: Left → Right → Root
 
 ### Level Order Traversal (BFS)
 
-<img src="https://i.imgur.com/pyNKw7k.gif" alt="Level Order Traversal Animation" width="350">
+```
+Level 0:        1
+              /   \
+Level 1:     2     3
+            / \   / \
+Level 2:   4   5 6   7
+
+Order: 1 → 2 → 3 → 4 → 5 → 6 → 7
+```
+
+**Steps:** Visit nodes level by level, left to right
 
 ```
 Visit order: Level by level (top to bottom, left to right)

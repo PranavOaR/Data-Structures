@@ -1,0 +1,9 @@
+# Compiled output
+*.out
+a.out
+
+# Object files
+*.o
+
+# Debug files
+*.dSYM/

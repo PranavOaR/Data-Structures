@@ -10,7 +10,7 @@
 
 A **tree** is a non-linear hierarchical data structure that consists of nodes connected by edges. It represents data in a **parent–child relationship**.
 
-<img src="https://www.geeksforgeeks.org/wp-content/uploads/binary-tree-to-DLL.png" alt="Binary Tree" width="300">
+<img src="https://i.imgur.com/vGbLMxS.png" alt="Binary Tree" width="300">
 
 ---
 
@@ -63,7 +63,7 @@ A tree where a node can have **any number of children**.
 
 A tree where each node has **at most two children** (left and right).
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221124174432/binary.png" alt="Binary Tree" width="280">
+<img src="https://i.imgur.com/vGbLMxS.png" alt="Binary Tree" width="280">
 
 **Applications:**
 - Searching & Sorting algorithms
@@ -79,7 +79,7 @@ A tree where each node has **at most two children** (left and right).
 
 Each node has **either 0 or 2 children** (no node has only one child).
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220630154752/FullBinaryTreewithsubscription.png" alt="Full Binary Tree" width="250">
+<img src="https://i.imgur.com/QKVnXhP.png" alt="Full Binary Tree" width="250">
 
 ---
 
@@ -88,7 +88,7 @@ Each node has **either 0 or 2 children** (no node has only one child).
 - All levels are **completely filled** except possibly the last
 - Last level nodes are filled **from left to right**
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220630160142/CompleteBinaryTreewithsubscription.png" alt="Complete Binary Tree" width="250">
+<img src="https://i.imgur.com/KQsS5Rz.png" alt="Complete Binary Tree" width="250">
 
 **Used in:** Heap implementation, Array representation of trees
 
@@ -99,7 +99,7 @@ Each node has **either 0 or 2 children** (no node has only one child).
 - All internal nodes have **exactly two children**
 - All leaf nodes are at the **same level**
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220630155553/PerfectBinaryTreewithsubscription.png" alt="Perfect Binary Tree" width="280">
+<img src="https://i.imgur.com/1NRwVjY.png" alt="Perfect Binary Tree" width="280">
 
 **Property:** If height = h, total nodes = $2^{h+1} - 1$
 
@@ -141,7 +141,7 @@ A binary tree where:
 - **Right subtree** contains values **greater than** root
 - Both subtrees are also BSTs
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221128124149/bst.png" alt="Binary Search Tree" width="280">
+<img src="https://i.imgur.com/jMIlLYC.png" alt="Binary Search Tree" width="280">
 
 **Operations:** Insertion, Searching, Deletion — all O(log n) when balanced
 
@@ -153,7 +153,7 @@ A binary tree where:
 
 A **self-balancing BST** where balance factor of each node is −1, 0, or +1.
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221229121830/avl.png" alt="AVL Tree" width="300">
+<img src="https://i.imgur.com/OyVkzKB.png" alt="AVL Tree" width="300">
 
 **Balance Factor** = Height(Left Subtree) − Height(Right Subtree)
 
@@ -169,7 +169,7 @@ A self-balancing BST with **color properties**:
 - No two consecutive **red** nodes
 - Every path has same number of **black** nodes
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20200427100650/red-black-tree.png" alt="Red-Black Tree" width="350">
+<img src="https://i.imgur.com/JDq3cNr.png" alt="Red-Black Tree" width="350">
 
 ---
 
@@ -182,7 +182,7 @@ A **complete binary tree** satisfying heap property:
 | **Max Heap** | Parent ≥ Children |
 | **Min Heap** | Parent ≤ Children |
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20201106115254/MaxHeap.jpg" alt="Max Heap" width="300">
+<img src="https://i.imgur.com/RH5tTxK.png" alt="Max Heap" width="300">
 
 **Applications:** Priority queue, Heap sort
 
@@ -239,7 +239,7 @@ Traversal = visiting each node **exactly once**.
 
 ### Preorder Traversal (Root → Left → Right)
 
-<img src="https://assets.digitalocean.com/articles/alligator/js/traversals/preorder.gif" alt="Preorder Traversal Animation" width="350">
+<img src="https://i.imgur.com/fzJHlvF.gif" alt="Preorder Traversal Animation" width="350">
 
 ```
 Visit order: Root → Left → Right
@@ -251,7 +251,7 @@ Visit order: Root → Left → Right
 
 ### Inorder Traversal (Left → Root → Right)
 
-<img src="https://assets.digitalocean.com/articles/alligator/js/traversals/inorder.gif" alt="Inorder Traversal Animation" width="350">
+<img src="https://i.imgur.com/bRk0b8h.gif" alt="Inorder Traversal Animation" width="350">
 
 ```
 Visit order: Left → Root → Right
@@ -265,7 +265,7 @@ Visit order: Left → Root → Right
 
 ### Postorder Traversal (Left → Right → Root)
 
-<img src="https://assets.digitalocean.com/articles/alligator/js/traversals/postorder.gif" alt="Postorder Traversal Animation" width="350">
+<img src="https://i.imgur.com/MpKxpfT.gif" alt="Postorder Traversal Animation" width="350">
 
 ```
 Visit order: Left → Right → Root
@@ -277,7 +277,7 @@ Visit order: Left → Right → Root
 
 ### Level Order Traversal (BFS)
 
-<img src="https://miro.medium.com/v2/resize:fit:800/1*2NIfAdSadsdK2rP015f6Bg.gif" alt="Level Order Traversal Animation" width="350">
+<img src="https://i.imgur.com/pyNKw7k.gif" alt="Level Order Traversal Animation" width="350">
 
 ```
 Visit order: Level by level (top to bottom, left to right)

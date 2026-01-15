@@ -1,8 +1,10 @@
-# Data Structures - Linked List Implementations
+# Data Structures
 
-This repository contains various implementations of linked lists in C.
+This repository contains various data structure implementations in C.
 
-## Files
+## Linked Lists
+
+All linked list implementations are located in the [`Linked Lists/`](Linked%20Lists/) folder.
 
 | File | Description |
 |------|-------------|
@@ -13,7 +15,7 @@ This repository contains various implementations of linked lists in C.
 | `CSLLWH.c` | Circular Singly Linked List With Header |
 | `CSLLWOH.c` | Circular Singly Linked List Without Header |
 
-## Features
+### Features
 
 Each implementation includes:
 - Insert at Beginning
@@ -24,9 +26,10 @@ Each implementation includes:
 - Delete at Position
 - Display List
 
-## How to Compile and Run
+### How to Compile and Run
 
 ```bash
+cd "Linked Lists"
 gcc <filename>.c -o <output_name>
 ./<output_name>
 ```

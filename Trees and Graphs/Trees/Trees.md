@@ -1,12 +1,14 @@
 # Trees Data Structure
 
+<div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
+
 ---
 
 ## What is a Tree?
 
 A **tree** is a non-linear hierarchical data structure that consists of nodes connected by edges. It represents data in a **parent–child relationship**.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Binary_tree.svg" alt="Binary Tree" style="background-color: white; padding: 15px; border-radius: 8px;" width="400">
+![Binary Tree](https://www.geeksforgeeks.org/wp-content/uploads/binary-tree-to-DLL.png)
 
 ---
 
@@ -59,7 +61,7 @@ A tree where a node can have **any number of children**.
 
 A tree where each node has **at most two children** (left and right).
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Binary_tree.svg" alt="Binary Tree" style="background-color: white; padding: 15px; border-radius: 8px;" width="350">
+![Binary Tree](https://media.geeksforgeeks.org/wp-content/uploads/20221124174432/binary.png)
 
 **Applications:**
 - Searching & Sorting algorithms
@@ -75,7 +77,7 @@ A tree where each node has **at most two children** (left and right).
 
 Each node has **either 0 or 2 children** (no node has only one child).
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Full_binary.svg" alt="Full Binary Tree" style="background-color: white; padding: 15px; border-radius: 8px;" width="300">
+![Full Binary Tree](https://media.geeksforgeeks.org/wp-content/uploads/20220630154752/FullBinaryTreewithsubscription.png)
 
 ---
 
@@ -84,7 +86,7 @@ Each node has **either 0 or 2 children** (no node has only one child).
 - All levels are **completely filled** except possibly the last
 - Last level nodes are filled **from left to right**
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Complete_binary2.svg" alt="Complete Binary Tree" style="background-color: white; padding: 15px; border-radius: 8px;" width="300">
+![Complete Binary Tree](https://media.geeksforgeeks.org/wp-content/uploads/20220630160142/CompleteBinaryTreewithsubscription.png)
 
 **Used in:** Heap implementation, Array representation of trees
 
@@ -95,7 +97,7 @@ Each node has **either 0 or 2 children** (no node has only one child).
 - All internal nodes have **exactly two children**
 - All leaf nodes are at the **same level**
 
-<img src="https://miro.medium.com/v2/resize:fit:776/1*CMGFtehu01ZEBgzHG71sMg.png" alt="Perfect Binary Tree" style="background-color: white; padding: 15px; border-radius: 8px;" width="350">
+![Perfect Binary Tree](https://media.geeksforgeeks.org/wp-content/uploads/20220630155553/PerfectBinaryTreewithsubscription.png)
 
 **Property:** If height = h, total nodes = $2^{h+1} - 1$
 
@@ -137,7 +139,7 @@ A binary tree where:
 - **Right subtree** contains values **greater than** root
 - Both subtrees are also BSTs
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Binary_search_tree.svg" alt="Binary Search Tree" style="background-color: white; padding: 15px; border-radius: 8px;" width="350">
+![Binary Search Tree](https://media.geeksforgeeks.org/wp-content/uploads/20221128124149/bst.png)
 
 **Operations:** Insertion, Searching, Deletion — all O(log n) when balanced
 
@@ -147,7 +149,7 @@ A binary tree where:
 
 A **self-balancing BST** where balance factor of each node is −1, 0, or +1.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/AVL_Tree_Example.gif" alt="AVL Tree" style="background-color: white; padding: 15px; border-radius: 8px;" width="350">
+![AVL Tree](https://media.geeksforgeeks.org/wp-content/uploads/20221229121830/avl.png)
 
 **Balance Factor** = Height(Left Subtree) − Height(Right Subtree)
 
@@ -163,7 +165,7 @@ A self-balancing BST with **color properties**:
 - No two consecutive **red** nodes
 - Every path has same number of **black** nodes
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Red-black_tree_example.svg" alt="Red-Black Tree" style="background-color: white; padding: 15px; border-radius: 8px;" width="400">
+![Red-Black Tree](https://media.geeksforgeeks.org/wp-content/uploads/20200427100650/red-black-tree.png)
 
 ---
 
@@ -176,7 +178,7 @@ A **complete binary tree** satisfying heap property:
 | **Max Heap** | Parent ≥ Children |
 | **Min Heap** | Parent ≤ Children |
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Max-Heap.svg" alt="Max Heap" style="background-color: white; padding: 15px; border-radius: 8px;" width="350">
+![Max Heap](https://media.geeksforgeeks.org/wp-content/uploads/20201106115254/MaxHeap.jpg)
 
 **Applications:** Priority queue, Heap sort
 
@@ -233,7 +235,7 @@ Traversal = visiting each node **exactly once**.
 
 ### Preorder Traversal (Root → Left → Right)
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Preorder-traversal.gif" alt="Preorder Traversal" style="background-color: white; padding: 15px; border-radius: 8px;" width="300">
+![Preorder Traversal](https://media.geeksforgeeks.org/wp-content/uploads/20240429124538/Preorder-Traversal-of-Binary-Tree.webp)
 
 ```
 Visit order: A → B → D → E → C → F
@@ -243,7 +245,7 @@ Visit order: A → B → D → E → C → F
 
 ### Inorder Traversal (Left → Root → Right)
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Inorder-traversal.gif" alt="Inorder Traversal" style="background-color: white; padding: 15px; border-radius: 8px;" width="300">
+![Inorder Traversal](https://media.geeksforgeeks.org/wp-content/uploads/20240429124631/Inorder-Traversal-of-Binary-Tree.webp)
 
 ```
 Visit order: D → B → E → A → F → C
@@ -255,7 +257,7 @@ Visit order: D → B → E → A → F → C
 
 ### Postorder Traversal (Left → Right → Root)
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Postorder-traversal.gif" alt="Postorder Traversal" style="background-color: white; padding: 15px; border-radius: 8px;" width="300">
+![Postorder Traversal](https://media.geeksforgeeks.org/wp-content/uploads/20240429124831/Postorder-Traversal-of-Binary-Tree.webp)
 
 ```
 Visit order: D → E → B → F → C → A
@@ -265,7 +267,7 @@ Visit order: D → E → B → F → C → A
 
 ### Level Order Traversal (BFS)
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Sorted_binary_tree_breadth-first_traversal.svg" alt="Level Order Traversal" style="background-color: white; padding: 15px; border-radius: 8px;" width="350">
+![Level Order Traversal](https://media.geeksforgeeks.org/wp-content/uploads/20240429134701/Level-Order-Traversal-of-Binary-Tree.webp)
 
 ```
 Visit order: A → B → C → D → E → F (level by level)
@@ -279,11 +281,11 @@ Uses a **Queue** for implementation.
 
 ### Insertion
 
-<img src="https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-insertion-animation.gif" alt="BST Insertion" style="background-color: white; padding: 15px; border-radius: 8px;" width="400">
+![BST Insertion](https://media.geeksforgeeks.org/wp-content/uploads/20231004133515/Insert-a-node-in-BST.png)
 
 ### Searching
 
-<img src="https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-sorted-array-animation.gif" alt="BST Searching" style="background-color: white; padding: 15px; border-radius: 8px;" width="400">
+![BST Searching](https://media.geeksforgeeks.org/wp-content/uploads/20231004132604/search-in-bst.png)
 
 ### Deletion
 

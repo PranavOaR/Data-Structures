@@ -20,20 +20,29 @@ Data-Structures/
 │   ├── CSLLWH.c / CSLLWOH.c
 │   └── CDLLWH.c / CDLLWOH.c
 │
-└── Stacks and Queues/
-    ├── Stacks/
-    │   ├── Stack.md
-    │   ├── Static Stack.c
-    │   ├── LL Stack.c
-    │   ├── InfixToPostfix.c
-    │   └── PostfixEvaluation.c
+├── Stacks and Queues/
+│   ├── Stacks/
+│   │   ├── Stack.md
+│   │   ├── Static Stack.c
+│   │   ├── LL Stack.c
+│   │   ├── InfixToPostfix.c
+│   │   └── PostfixEvaluation.c
+│   │
+│   └── Queues/
+│       ├── Queue.md
+│       ├── Static Queue.c
+│       ├── LL Queue.c
+│       ├── Static Circular Queue.c
+│       └── LL Circular Queue.c
+│
+└── Trees and Graphs/
+    ├── Trees/
+    │   ├── Trees.md
+    │   └── Trees.c
     │
-    └── Queues/
-        ├── Queue.md
-        ├── Static Queue.c
-        ├── LL Queue.c
-        ├── Static Circular Queue.c
-        └── LL Circular Queue.c
+    └── Graphs/
+        ├── Graph.md
+        └── images/
 ```
 
 ---
@@ -115,6 +124,38 @@ FIFO (First In First Out) data structure implementations.
 
 ---
 
+### 5. Trees
+
+Hierarchical data structure implementations.
+
+📖 **Theory:** [Trees.md](Trees%20and%20Graphs/Trees/Trees.md)
+
+| Implementation | File |
+|----------------|------|
+| Binary Search Tree | [Trees.c](Trees%20and%20Graphs/Trees/Trees.c) |
+
+**Topics Covered:**
+- Tree terminology & types
+- Binary Trees, BST, AVL, Red-Black Trees
+- Tree traversals (Inorder, Preorder, Postorder, Level Order)
+- Heap data structure
+
+---
+
+### 6. Graphs
+
+Non-linear data structure for representing networks.
+
+📖 **Theory:** [Graph.md](Trees%20and%20Graphs/Graphs/Graph.md)
+
+**Topics Covered:**
+- Graph terminology & types
+- Adjacency Matrix & Adjacency List
+- BFS & DFS traversals
+- Applications of graphs
+
+---
+
 ## 🛠️ How to Compile and Run
 
 ```bash
@@ -145,6 +186,8 @@ gcc SLLWOH.c -o sll
 | Linked List | O(n) | O(1) | O(1) | Dynamic size |
 | Stack | O(n) | O(1) | O(1) | LIFO operations |
 | Queue | O(n) | O(1) | O(1) | FIFO operations |
+| BST (balanced) | O(log n) | O(log n) | O(log n) | Sorted data |
+| Graph | O(V+E) | O(1) | O(E) | Networks |
 
 ---
 
@@ -173,6 +216,9 @@ All theory files (`.md`) include:
 - [x] Expression Conversion & Evaluation
 - [x] Queues (Simple & Circular)
 - [x] Round Robin Scheduling
+- [x] Trees & Binary Search Trees
+- [x] Tree Traversals
+- [x] Graphs (BFS & DFS)
 
 ---
 

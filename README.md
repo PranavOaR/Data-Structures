@@ -1,4 +1,4 @@
-# Data Structures
+# Data Structures in C - Comprehensive guide
 
 A comprehensive collection of data structure implementations and theory notes in C.
 

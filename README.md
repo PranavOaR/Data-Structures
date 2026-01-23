@@ -61,7 +61,7 @@ Foundational concepts for understanding data structures.
 
 ---
 
-### 2. Linked Lists
+### 2. Linked Lists - C Implementation
 
 All linked list implementations with theory notes.
 
